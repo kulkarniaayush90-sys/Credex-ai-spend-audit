@@ -1,8 +1,10 @@
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals.js";
 
+const nextVitalsConfig = Array.isArray(nextVitals) ? nextVitals : [nextVitals];
+
 export default defineConfig([
-  ...nextVitals,
+  ...nextVitalsConfig,
   globalIgnores([
     ".next/**",
     "coverage/**",
