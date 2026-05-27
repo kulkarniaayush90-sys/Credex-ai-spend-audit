@@ -1,0 +1,61 @@
+{
+  "name": "credex-ai-spend-audit",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --max-warnings=0",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepare": "node -e \"console.log('Husky hooks are present in .husky')\""
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.61.0",
+    "@hookform/resolvers": "^5.2.1",
+    "@supabase/supabase-js": "^2.57.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.17",
+    "lucide-react": "^0.468.0",
+    "next": "15.1.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-hook-form": "^7.53.2",
+    "resend": "^6.0.2",
+    "tailwind-merge": "^2.5.4",
+    "zod": "^3.24.1",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@vitest/coverage-v8": "^2.1.8",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "15.1.4",
+    "husky": "^9.1.7",
+    "jsdom": "^25.0.1",
+    "lint-staged": "^15.4.3",
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,mjs,cjs}": [
+      "eslint --fix"
+    ],
+    "*.{ts,tsx,js,mjs,cjs,md,json,css}": [
+      "prettier --write"
+    ]
+  }
+}

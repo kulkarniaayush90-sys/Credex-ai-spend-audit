@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 47% 6%;
+  --foreground: 210 40% 98%;
+  --card: 222 47% 9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222 47% 9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 188 94% 43%;
+  --primary-foreground: 222 47% 8%;
+  --secondary: 215 28% 17%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217 24% 16%;
+  --muted-foreground: 215 20% 72%;
+  --accent: 217 24% 16%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217 24% 18%;
+  --input: 217 24% 18%;
+  --ring: 188 94% 43%;
+  color-scheme: dark;
+}
+
+.light {
+  --background: 210 40% 98%;
+  --foreground: 224 71% 4%;
+  --card: 0 0% 100%;
+  --card-foreground: 224 71% 4%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 224 71% 4%;
+  --primary: 188 94% 40%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 214 32% 91%;
+  --secondary-foreground: 224 71% 4%;
+  --muted: 214 32% 91%;
+  --muted-foreground: 215 16% 46%;
+  --accent: 214 32% 91%;
+  --accent-foreground: 224 71% 4%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214 32% 88%;
+  --input: 214 32% 88%;
+  --ring: 188 94% 43%;
+  color-scheme: light;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.12), transparent 24%),
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 18%),
+    linear-gradient(180deg, hsl(var(--background)), hsl(var(--background)));
+  color: hsl(var(--foreground));
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.28);
+}
+
+.glass {
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(22px);
+}
+
